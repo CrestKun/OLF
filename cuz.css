@@ -1,0 +1,45 @@
+/* Arrow Styling */
+.backArrow {
+    font-size: 75px;
+    line-height: 75px;
+
+    width: 1em;
+    height: 0em;
+    padding: 3px;
+
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    transform: rotate(140deg);
+
+    color: white;
+    border: 10px solid white;
+    border-radius: 30%;
+
+    -webkit-touch-callout: none;
+     -khtml-user-select: none;
+}
+.backArrow:hover {
+    background: rgba(150,150,150,.5);
+}
+.backArrow:active {
+    position: relative;
+    right: 2px;
+}
+
+/* Document Styling */
+body {
+    background: ;
+    color: black;
+    font-family: 'Open Sans',sans-serif;
+}
+header {
+  text-align: center;
+  font-size: 84pt;
+}
+.container {
+  padding-top: 6em;
+  margin: auto 1%;
+}

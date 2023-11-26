@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>zanthelus</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./intro.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <section class="lock-screen" id="lock">
+    <img class="avatar" src="https://64.media.tumblr.com/3b07ede0322cd82c7582b8389546b474/218a44e9265b7982-3b/s1280x1920/630e5bf70049cab7bc0833a568e221e64285254b.jpg" alt="icon">
+    <h1 class="nickname">Our Lady of Fatima</h1>
+    <div class="password">
+      <input class="password_inp" type="password" placeholder="Enter Password" id="pass" maxlength="20">
+      <button class="password_btn"><i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></button>
+    </div>
+  </section>
+  <div class="loading"></div>
+  <section class="desktop"></section>
+</div>
+<!-- partial -->
+
+<script src="./intro.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Assuming your loading animation class is "loading"
+    var loadingElement = document.querySelector(".loading");
+
+    // Add an event listener for animation end
+    loadingElement.addEventListener("animationend", function () {
+      // Redirect to another HTML page
+      window.location.href = "index.html";
+    });
+  });
+</script>
+
+</body>
+</html>
